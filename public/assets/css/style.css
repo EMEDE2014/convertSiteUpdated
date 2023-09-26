@@ -15,6 +15,7 @@ header.index{
 }
 html, body{
     height: 100%;
+    color: white;
 }
 
 section.topo{
@@ -29,7 +30,7 @@ section.box-model{
     width: 700px;
     margin: 0 auto;
     text-align:  center;
-    background-color: #ffffff;
+    background-color: #202020;
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -48,6 +49,7 @@ main{
     padding-top: 500px;
     padding-bottom: 120px;
     height: auto;
+    background-color: #202020;
     
 }
 
@@ -89,7 +91,7 @@ footer.back_color{
     padding-top: 200px;
     padding-bottom: 80px;
     background-color: #150992b7 ;
-    color: white;
+    color: #202020;
     position: relative;
 }
 .container-box{
@@ -251,6 +253,7 @@ footer.back_color{
     main{
         padding-top: 150px;
         padding-bottom: 40px;
+        background-color: #202020;
         
     }
     main.container{

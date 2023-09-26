@@ -115,8 +115,8 @@ function ekUpload(){
             if (xhr.readyState == 4) {
               // Everything is good!
   
-              // progress.className = (xhr.status == 200 ? "success" : "failure");
-              // document.location.reload(true);
+              progress.className = (xhr.status == 200 ? "success" : "failure");
+              document.location.reload(true);
             }
           };
   
@@ -125,7 +125,7 @@ function ekUpload(){
           xhr.setRequestHeader('X-File-Name', file.name);
           xhr.setRequestHeader('X-File-Size', file.size);
           xhr.setRequestHeader('Content-Type', 'multipart/form-data');
-          xhr.send(file);
+          xhr.onload
         } else {
           output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
         }

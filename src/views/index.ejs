@@ -16,24 +16,35 @@
            
             <p  class="text-warning bg-dark" style="padding: 20px;font-size: 17px; font-weight: 400; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Select a Image or change</p>
         
-            <form id="file-upload-form" class="uploader mb-4" action="/upload"  method="post" enctype="multipart/form-data" class="shadow p-3 mb-0 bg-body rounded verifyFiles" >
-                <input id="file-upload" type="file" class=".verifyFiles" name="fileUpload" accept="image/*" />
-              
-                <label for="file-upload" id="file-drag">
-                  <img id="file-image" src="#" alt="Preview" class="hidden">
-                  <div id="start">
-                    <i class="fa fa-download" aria-hidden="true"></i>
-                    <div>Select a file or drag here</div>
-                    <div id="notimage" class="hidden">Please select an image</div>
-                    <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
-                  </div>
-                  <div id="response" class="hidden">
-                    <div id="messages"></div>
-                    <progress class="progress" id="file-progress" value="0">
-                      <span>0</span>%
-                    </progress>
-                  </div>
-                </label>
+
+            <!-- <form action="/upload" method="post" enctype="multipart/form-data" class="verifyFiles">
+                <input id="file-upload" type="file"  name="imageUpload" accept="image/*" />
+                <button type="submit" class="btn btn-success">Converter</button>
+
+            </form> -->
+            
+            <form id="file-upload-form" class="uploader mb-4 shadow p-3 mb-0 bg-body rounded verifyFiles" action="/upload"  method="post" enctype="multipart/form-data" >
+                
+                <input id="file-upload" type="file" name="imageUpload" accept="image/*" />
+
+                   <div id="content">
+                    <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="#" alt="Preview" class="hidden">
+                        <div id="start">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                          <div>Select a file or drag here</div>
+                          <div id="notimage" class="hidden">Please select an image</div>
+                          <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                        </div>
+                        <div id="response" class="hidden">
+                          <div id="messages"></div>
+                          <progress class="progress" id="file-progress" value="0">
+                            <span>0</span>%
+                          </progress>
+                        </div>
+                      </label>
+                   </div> 
+        
                 <button type="submit" class="btn btn-success">Converter</button>
               </form>
 
